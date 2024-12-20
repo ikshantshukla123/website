@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romance Genre - eBook Library</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffffff, #000000);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #000000, #ffffff);
+            color: white;
+            text-align: center;
+            padding: 3rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 5rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+
+        .ebook-section {
+            margin: 3rem auto;
+            max-width: 900px;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .ebook-section h2 {
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            text-align: center;
+            color: #000;
+        }
+
+        .ebook {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .ebook h3 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .ebook p {
+            margin: 0.5rem 0 0;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .rating select {
+            font-size: 1rem;
+            padding: 0.2rem;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            margin-top: 3rem;
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 1rem;
+            font-family: 'Georgia', serif;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Romance Genre</h1>
+        <p>Feel the Love in Every Page</p>
+    </header>
+
+    <section class="ebook-section">
+        <h2>Top Picks in Romance</h2>
+
+        <div class="ebook">
+            <div>
+                <h3>Pride and Prejudice</h3>
+                <p>Author: Jane Austen</p>
+                <p><a href="https://www.gutenberg.org/ebooks/1342" target="_blank">Read Now</a></p>
+            </div>
+            <div class="rating">
+                <label for="rating-pride">Rate this book:</label>
+                <select id="rating-pride" name="rating-pride">
+                    <option value="average">Average</option>
+                    <option value="good">Good</option>
+                    <option value="excellent">Excellent</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="ebook">
+            <div>
+                <h3>Jane Eyre</h3>
+                <p>Author: Charlotte Brontë</p>
+                <p><a href="https://www.gutenberg.org/ebooks/1260" target="_blank">Read Now</a></p>
+            </div>
+            <div class="rating">
+                <label for="rating-eyre">Rate this book:</label>
+                <select id="rating-eyre" name="rating-eyre">
+                    <option value="average">Average</option>
+                    <option value="good">Good</option>
+                    <option value="excellent">Excellent</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="ebook">
+            <div>
+                <h3>Wuthering Heights</h3>
+                <p>Author: Emily Brontë</p>
+                <p><a href="https://www.gutenberg.org/ebooks/768" target="_blank">Read Now</a></p>
+            </div>
+            <div class="rating">
+                <label for="rating-heights">Rate this book:</label>
+                <select id="rating-heights" name="rating-heights">
+                    <option value="average">Average</option>
+                    <option value="good">Good</option>
+                    <option value="excellent">Excellent</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Personal Library. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Book Library</title>
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #98919f, #6609de);
+            color: #333;
+            background-image: url(_.jpeg);
+            background-size: cover;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: radial-gradient(circle, black, white);
+            color: white;
+            padding: 1rem 3rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-title {
+            text-align: center;
+        }
+
+        .header-title h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .header-title p {
+            margin-top: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            background: rgb(77, 75, 75);
+            color: rgb(247, 243, 243);
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            font-family: 'Merriweather', serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .genre-section {
+            margin: 3rem auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .genre-section h2 {
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+            color: #f7f4f9;
+        }
+
+        .genres {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem;
+            border: 2px solid #565558;
+            border-radius: 15px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-image: url(reading3.jpeg);
+            background-size: cover;
+        }
+
+        .genre-button {
+            background: radial-gradient(circle, black, white);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            font-size: 1.25rem;
+            font-weight: bold;
+            font-family: 'Merriweather', serif;
+            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .genre-button:hover {
+            background-color: #4e83f1;
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            margin-top: 7.5rem;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            font-family: 'Merriweather', serif;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        p:hover {
+            color: rgb(50, 48, 48);
+        }
+
+        h1:hover {
+            color: rgb(50, 48, 48);
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h1>Welcome to Your Personal Library</h1>
+            <p>Discover and enjoy e-books tailored to your taste.</p>
+        </div>
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </header>
+
+    <section class="genre-section">
+        <h2>What's Your Genre?</h2>
+        <div class="genres">
+            <button class="genre-button"><a href="romance.html">Romance</a></button>
+            <button class="genre-button"><a href="novels.html">Novels</a></button>
+            <button class="genre-button"><a href="self-help.html">Self-Help</a></button>
+            <button class="genre-button"><a href="mystery.html">Mystery</a></button>
+            <button class="genre-button"><a href="science.html">Science</a></button>
+            <button class="genre-button"><a href="fantasy.html">Fantasy</a></button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Personal Library. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

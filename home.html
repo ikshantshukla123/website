@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to E-Book Haven</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url(ikshank.jpg);
+            
+        }
+
+
+        .contain{
+            width: 100%;
+            height: 100%;
+           
+        }
+
+        nav {
+           background: radial-gradient(circle, black, white);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            opacity: 100% ;
+        }
+        nav h1 {
+            margin: 0;
+            
+            font-size: 2.9rem;
+        }
+        nav p {
+            margin: 5px 0 0;
+            font-size: 1.3rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #3a3d98;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2d2f75;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+
+       
+        
+      
+        .bbb:hover{
+            color: #f06b0c;
+        }
+     
+       
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>E-Book Haven</h1>
+        <p>Your Gateway to a World of Stories</p>
+    </nav>
+
+  
+       
+        <div class="container">
+        <h2>Sign Up</h2>
+        <form id="form">
+            <div class="image">
+            <div class="form-group">
+                <label for="name">First Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your first name" required >
+            </div>
+            <div class="form-group">
+                <label for="surname">Last Name</label>
+                <input type="text" id="surname" name="surname" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number"  required >
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required id="input-email">
+                <div class="error"></div>
+            </div>
+             
+            <button type="submit" class="bbb">Sign Up</button>
+            </div>
+            <footer>
+                <p>&copy; 2024 E-Book Haven. All rights reserved.</p>
+            </footer>
+        </form>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
